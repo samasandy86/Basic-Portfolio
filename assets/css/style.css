@@ -1,0 +1,105 @@
+/* Color Palettes
+Teal color (used for headings and backgrounds): #4aaaa5
+Regular font color (used for paragraphs and all text besides the headings): #777777
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+*/
+/* Global Styles */
+body{
+    
+    background-color: #ffffff;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+main{
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/652/confectionary.png);
+    border-color:#4aaaa5;
+
+}
+header{
+    background-color: white;
+    border-color: #cccccc;
+    height: 85px;
+    width: auto;
+
+}
+h1{
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    color: white;
+    background-color: #4aaaa5;
+    margin: 0 15%;
+    float: left;
+    width: auto;
+    height: 85px;
+    text-align: center;
+}
+header li {
+    margin: 30px 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+a:link {
+    color: #777777;
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #777777; 
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #666666;
+}
+
+a:active {
+    text-decoration: underline;
+}
+span {
+    content: "\007C";
+  }
+.content{
+    display: inline-block;
+    max-width: 50%;
+    text-align: left;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    margin: 15px;
+    vertical-align: top;
+  }
+h2{
+    text-align: left;
+}
+.headshot{
+    float: left;
+    padding: 2%;
+}
+.sidebar{
+    display: inline-block;
+    max-width: 30%;
+    text-align: left;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 15px;
+}
+
+section a{
+    margin: 0px 10px;
+    display: inline;
+    text-decoration: none;
+    font-size: 64px;
+
+
+hr {
+    size: 5px;
+    color: #666666; 
+}
+footer{
+    background-color: #666666;
+}
