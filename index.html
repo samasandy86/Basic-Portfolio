@@ -1,59 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- Meta code to make page responsive across devices. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Document's character set. -->
+    <meta charset="UTF-8">
+
+    <!-- Makes content compatible for IE Edge -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HW 1 - Basic Portfolio</title>
-    <!--scripts-->
+
+    <title>U of M - Bootcamp - Basic Portfolio</title>
+
+    <!--Scripts for fonts use on the site-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-    <!--styles-->
+
+    <!--Links for Stylesheets-->
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
-    <header>
-        <h1>Sama Llama</h1>
-        <nav>
-            <ul>
-                <li><a href="#">About Me</a></li>
-                    <span>&#124;</span>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                    <span>&#124;</span>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
+    <div class="content-wrapper">
+        <header>
+            <div class="container">
+                <div class="name">
+                    <div class="logo">Sama The Llama</div>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#" class="active">About</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div> <!-- .container -->
+        </header>
+        
         <div class="content">
-            <h2>About Me</h2>
-                <hr />
-                <div class="headshot"><img src="http://www.placepuppy.net/1p/300/250" alt="puppy headshot"></div>
-            <p>Consectetur et consectetur excepteur ut fugiat Lorem. 
-                Cillum irure velit sint voluptate sunt nulla dolore ipsum irure esse Lorem nisi elit incididunt. 
-                Aliqua ea eu duis esse reprehenderit dolor adipisicing tempor reprehenderit duis nostrud ex. 
-                Fugiat cillum sit cillum esse minim adipisicing enim occaecat nulla voluptate ex. 
-                Nisi sint est cupidatat eiusmod quis magna aute amet. Dolore ut occaecat qui ipsum consectetur esse laboris tempor Lorem dolore aliqua minim. 
-                Lorem proident qui culpa aliqua tempor eiusmod ut incididunt nulla aute proident laboris aute culpa.</p>
-        </div>
-        <div class="sidebar">
-            <h2>Contact Me</h2>
-                <hr />             
-                    <section>
-                        <div>
-                            <ul>
-                                <li><a href="#"><i class="fab fa-github"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                                <li><a href="#"><i class="fab fa-stack-overflow"></i></a></li>                   
-                            </ul>
-                        </div>
-                    </section>
-        </div>
-    </main>
-    <footer>
+            <!-- Main content -->
+            <div class="main">
+                <h1 class="page-title">About Me</h1>
+                <p>
+                    <img class="headshot" src="./assets/images/headshot.jpg" alt="Sandy Family In Orlando">
+                </p>
+                <p>
+                    What's Up! My name is Sama Sandy. A little about myself; I love all things and
+                    anything creative. I first cut my teeth on the creative edges a year after
+                    college. I taught myself Adobe Photoshop, Illustrator and InDesign through
+                    online tutorials. 
+                </p>
+                <p>                    
+                    From there I transitioned into web design learning basic
+                    HTML & CSS. Outside of web design, I also taught myself video editing. I primarily
+                    use Final Cut Pro but I also use Adobe Primere Pro and After Effects. In addition 
+                    to video I also dabble a bit in music production and audio editing. 
+                </p>
+                <p>
+                    When I'm not in front of a computer screen I enjoy playing volleyball with my
+                    wife of 7 (almost 8 years) and being silly with 3 and half year old daughter. We are
+                    expecting our 2nd child in June and we are overjoyed when we found out it was a boy.
+                </p> 
+                <p>
+                    If you want to get to know me on more of a professional level, check out some of my 
+                    professional social profiles. If you want to see some and handful of my professional work
+                    checkout my marketing boutique company at <a href="www.yayahcreative.com" target="_blank">Yayah Creative</a>.
+                </p>
 
-    </footer>
+            </div> <!-- .main -->
     
-</body>
+            <div class="sidebar">
+                <h2 class="sidebar-title">Let's Get Social</h2>
+                
+                <ul class="social">
+                    <li><a href="https://github.com/samasandy/"><img src="./assets/images/github_icon.png" alt="GitHub icon"></a></li>
+                    <li><a href="https://www.linkedin.com/in/sama-sandy-aa34aa5/"><img src="./assets/images/linkedin_icon.png" alt="LinkedIn icon"></a></li>
+                    <li><a href="https://stackoverflow.com/users/8853969/yayah22?tab=profile"><img src="./assets/images/stackoverflow_icon.png" alt="StackOverflow icon"></a></li>
+                </ul>
+            </div> <!-- .sidebar -->
+        </div> <!-- .content -->
+        <div class="footer-push"></div>
+    </div> <!-- .content-wrapper -->
+        
+        <footer>
+            &copy; Copyright 2017 <a href="www.yayahcreative.com">Yayah Creative</a>
+        </footer>
+    
+    </body>
 </html>
